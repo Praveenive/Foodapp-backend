@@ -8,7 +8,7 @@ export function databaseConnection(){
         useUnifiedTopology: true
     }
  try {
-    mongoose.connect("mongodb://127.0.0.1:27017/",params)
+    mongoose.connect("mongodb+srv://praveenive:Praveen6@cluster0.4iggedc.mongodb.net/?retryWrites=true&w=majority",params)
     console.log("Database connected")
  } catch (error) {
     console.log("database",error)
